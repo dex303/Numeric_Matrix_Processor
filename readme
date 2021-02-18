@@ -1,0 +1,38 @@
+Stage 6/6: Inverse matrix
+Description
+In this stage, you should find an inverse of a matrix. You need to use the information you’ve got in the previous stages. The inverse matrix \( A^{−1} \) is the matrix, the product of which, and the original matrix \(A\) is equal to the identity matrix. You can watch the following video to better understand inverse matrices .
+\( A \times A^{-1} = A^{-1} \times A = I \)
+The identity matrix is the matrix in which all elements of the main diagonal are 1 and all other elements are 0. Example of a \(4, 4\) identity matrix:
+\(I_{4,4} = \begin{pmatrix} 1 & 0 & 0 &0\\ 0 & 1 & 0 &0 \\ 0 & 0 & 1&0 \\0 & 0 & 0 &1\end{pmatrix}\)
+The inverse of a matrix can be found using this formula:  \( A^{-1} = \dfrac{1}{det(A)} \times C^T \)
+As you can see, it contains a lot of operations you've implemented during the previous stages, such as finding cofactors of all the elements of the matrix, transposition of the matrix, finding the determinant of a matrix, multiplication of a matrix by a constant.
+\( det(A) \) is a determinant of a matrix \( A \) and \( C^T \) is the matrix that consists of cofactors of all the elements of the matrix \( A \) transposed relative to the main diagonal. The inverse matrix can’t be found if \( det(A) \) equals zero. You can look at the calculation example in this  video.
+Also, you can implement a method that can print a matrix in a readable way; every column would be correctly aligned. You can round the results by two or more digits.
+Example
+Below is an example of what your output might look like:
+1. Add matrices
+2. Multiply matrix to a constant
+3. Multiply matrices
+4. Transpose matrix
+5. Calculate a determinant
+6. Inverse matrix
+0. Exit
+Your choice: > 6
+Enter matrix size: > 3 3
+Enter matrix:
+> 2 -1 0
+> 0 1 2
+> 1 1 0
+The result is:
+ 0.33   0  0.33
+-0.33   0  0.66
+ 0.16 0.5 -0.33
+
+1. Add matrices
+2. Multiply matrix to a constant
+3. Multiply matrices
+4. Transpose matrix
+5. Calculate a determinant
+6. Inverse matrix
+0. Exit
+Your choice: > 0
